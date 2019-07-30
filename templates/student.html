@@ -5,6 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
-    <h1>This is the page for the student with id {{ id_number }}.</h1>
+	<h1>This is the page for the student who's name is {{ student.name }}</h1>
+	<h2>Hi is {{ student.year }}</h2>
+    <h2>The student's id is {{ student_id }}.</h2>
+    
+    <a href = "{{url_for('home')}}">Back to home</a>
 </body>
 </html>
